@@ -25,7 +25,7 @@
   "copyright": "(c) The C2 Group (c2experience.com)",
   "dependencies": {
     "c2-event-handler": "^2.3.1",
-    "jquery": "^2.1.4"
+    "jquery": "3.0.0"
   },
   "devDependencies": {
     "chai": "^3.3.0",
