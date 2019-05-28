@@ -1,16 +1,16 @@
 {
   "name": "form-handler",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Validate, read, and reset form fields.",
   "jsnext:main": "form-handler.js",
   "main": "cjs/form-handler.js",
   "export": "FormFields",
   "scripts": {
-    "test": "mocha",
     "iife": "rollup -c rollup-iife.config.js",
     "cjs": "rollup -c rollup-cjs.config.js",
     "umd": "rollup -c rollup-umd.config.js",
-    "build": "npm run iife && npm run cjs && npm run umd"
+    "build": "npm run iife && npm run cjs && npm run umd",
+    "bundle-example": "browserify example/js/index.js -o example/bundle/index.js"
   },
   "repository": {
     "type": "git",
@@ -23,23 +23,22 @@
   "author": "The C2 Group",
   "license": "MIT",
   "copyright": "(c) The C2 Group (c2experience.com)",
-  "dependencies": {
-    "c2-event-handler": "^2.3.1",
-    "jquery": "3.0.0"
-  },
-  "devDependencies": {
-    "chai": "^3.3.0",
-    "nightmare": "^2.0.6",
-    "babel-preset-es2015-rollup": "^1.0.0",
-    "rollup": "^0.21.0",
-    "rollup-plugin-babel": "^2.1.0"
-  },
   "bugs": {
     "url": "https://github.com/TheC2Group/form-handler/issues"
   },
   "homepage": "https://github.com/TheC2Group/form-handler",
-  "directories": {
-    "example": "example",
-    "test": "test"
+  "dependencies": {
+    "c2-event-handler": "^2.3.1",
+    "jquery": ">=3.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "browserify": "^16.2.3",
+    "acorn": "^6.0.0",
+    "rollup": "^1.12.3",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-node-resolve": "^5.0.0"
   }
 }

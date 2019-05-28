@@ -1,4 +1,5 @@
-'use strict';
+var $ = require('jquery');
+var FormFields = require('../../cjs/form-handler.js');
 
 var $inputs = $(':input');
 
@@ -62,4 +63,4 @@ $('.Editable').on('click', function () {
     fields.editable();
 });
 
-formListener('.Wrap', fields);
+//formListener('.Wrap', fields);

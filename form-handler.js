@@ -1,7 +1,7 @@
 'use strict';
 
-import * as $ from 'jquery';
-import * as eventHandler from 'c2-event-handler';
+import $ from 'jquery';
+import eventHandler from 'c2-event-handler';
 
 var attrs = {
     status: 'data-status',
