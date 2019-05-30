@@ -1,15 +1,12 @@
 {
   "name": "form-handler",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Validate, read, and reset form fields.",
   "jsnext:main": "form-handler.js",
   "main": "cjs/form-handler.js",
   "export": "FormFields",
   "scripts": {
-    "iife": "rollup -c rollup-iife.config.js",
-    "cjs": "rollup -c rollup-cjs.config.js",
-    "umd": "rollup -c rollup-umd.config.js",
-    "build": "npm run iife && npm run cjs && npm run umd",
+    "build": "rollup -c rollup.config.js",
     "bundle-example": "browserify example/js/index.js -o example/bundle/index.js"
   },
   "repository": {
